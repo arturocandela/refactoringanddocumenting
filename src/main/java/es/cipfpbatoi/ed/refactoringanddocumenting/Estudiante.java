@@ -1,6 +1,6 @@
 package es.cipfpbatoi.ed.refactoringanddocumenting;
 
-public class Estudiante{
+public class Estudiante implements IComparable{
 	
 	int edad;
 	String nombre;
@@ -11,6 +11,7 @@ public class Estudiante{
 		this.nombre = n;
 	}
 
+	@Override
 	public int comparaTe(Estudiante e) {
 		
 		if (this.edad == e.edad){
