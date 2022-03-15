@@ -2,6 +2,7 @@ package es.cipfpbatoi.ed.refactoringanddocumenting;
 
 public class Estudiante implements IComparable{
 	
+	private static final int EDAD_MINIMA = 18;
 	int edad;
 	String nombre;
 	
@@ -25,7 +26,7 @@ public class Estudiante implements IComparable{
 
 	public static boolean esMayorEdad(int edad)
 	{
-		return edad >= 18;
+		return edad >= EDAD_MINIMA;
 	}
 	
 }

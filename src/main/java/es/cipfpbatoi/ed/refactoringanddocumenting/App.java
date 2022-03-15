@@ -13,11 +13,16 @@ public class App
         Estudiante pepe = new Estudiante(10,"pepe");
         
         String textoEstudiante = "El estudiante ";
-		if (Estudiante.esMayorEdad(pepe.edad)) {
-        	System.out.println(textoEstudiante + pepe.nombre + " es mayor de edad");
-        } else {
-        	System.out.println(textoEstudiante + pepe.nombre + " es menor de edad");
-        }
+        
+		imprimirInformacio(pepe, textoEstudiante);
         
     }
+
+	private static void imprimirInformacio(Estudiante estudiant, String textoEstudiante) {
+		if (Estudiante.esMayorEdad(estudiant.edad)) {
+        	System.out.println(textoEstudiante + estudiant.nombre + " es mayor de edad");
+        } else {
+        	System.out.println(textoEstudiante + estudiant.nombre + " es menor de edad");
+        }
+	}
 }
